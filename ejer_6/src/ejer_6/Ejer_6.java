@@ -8,6 +8,9 @@
 *   Coñecido o nome do artigo e as vendas anuais . Indicar de que tipo é
 */
 package ejer_6;
+
+import java.util.Scanner;
+
 /**
  *
  * @author andrea
@@ -17,7 +20,9 @@ public class Ejer_6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int vendas_an=550;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce as vendas anuais :");
+        int vendas_an=sc.nextInt();
         Productos producto = new Productos(vendas_an);
         producto.compVendas(vendas_an);
         System.out.println(producto.toString());
