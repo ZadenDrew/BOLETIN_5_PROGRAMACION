@@ -1,7 +1,7 @@
 package ejer_7;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltMath.power;
-import static java.lang.Math.sqrt;
+
+
 
 /**
  *
@@ -13,17 +13,15 @@ public class Figuras {
     public Figuras(){
     }
     public int cuadrado(int b,int l){
-        superficie=(b*2)+(l*2);
+        superficie=(b*l);
     return superficie;
     }
     public int triangulo(int b,int l){
-        double h=(b^2)+(l^2);
-        double hipotenusa=sqrt(h);
-        superficie=(int) (b+l+h);
+        double h=(b*l)/2;
     return superficie;
     }
     public int circulo(int r){
-    return superficie= (int) (PI * (power(r,2)));
+    return superficie= (int) (PI * (Math.pow(r,2)));
     }
 
 }

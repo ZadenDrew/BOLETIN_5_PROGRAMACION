@@ -24,7 +24,7 @@ public class Ejer_7 {
     public static void main(String[] args) {
         int menu,lado,base,radio;
         Figuras fig = new Figuras();
-        System.out.println("Introduzca su opción : \n1) Cuadrado \n4) Triángulo \n3) Círculo");
+        System.out.println("Introduzca su opción : \n1) Cuadrado \n2) Triángulo \n3) Círculo");
         Scanner sc = new Scanner(System.in);
         menu=sc.nextInt();
         switch(menu){
